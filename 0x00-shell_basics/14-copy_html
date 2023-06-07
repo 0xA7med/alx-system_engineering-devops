@@ -1,6 +1,2 @@
 #!/bin/bash
-source_dir=$(pwd)
-destination_dir=$(dirname "$source_dir")
-
-# Copy HTML files from source to destination directory
-cp -ru "$source_dir"/*.html "$destination_dir"
+find . -name "*.html" -type f -newer ../ -exec cp {} ../ \;
