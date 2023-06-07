@@ -1,3 +1,2 @@
 #!/bin/bash
 ls -A1 | sort -d | awk 'BEGIN {ORS=","} {print $0} END {print ""}'
-
