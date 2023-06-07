@@ -1,8 +1,8 @@
 #!/bin/bash
+   ls -l
+
+ cd ..
   ls -l
 
-cd ..
-  ls -l
-
-cd /boot
+ cd /boot
   ls -l
