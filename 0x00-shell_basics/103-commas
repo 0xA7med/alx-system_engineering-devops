@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -A1 | sort -d | awk 'BEGIN {ORS=","} {print $0} END {print ""}'
+ls -A | sort -df | sed -e 's/$/,/' -e '$ s/,$/\n/'
